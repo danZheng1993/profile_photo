@@ -44,7 +44,16 @@ const ProfileEditor: React.FC<ProfileEditorProps> = ({profileId, onBack}) => {
       setPhotos([]);
       try {
         const result = await fetchPhotos(profileId);
-        setPhotos(result.data);
+        console.log(
+          result.data.sort(
+            (a: ProfilePhoto, b: ProfilePhoto) => a.position - b.position,
+          ),
+        );
+        setPhotos(
+          result.data.sort(
+            (a: ProfilePhoto, b: ProfilePhoto) => a.position - b.position,
+          ),
+        );
       } catch {
         console.log('error');
       }
