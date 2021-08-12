@@ -15,10 +15,10 @@ export const postPhoto = (memberId: number, photoDetails: ProfilePhotoBase) => {
   return apiClient.post(`/member/${memberId}/photos`, photoDetails);
 }
 
-export const updatePhoto = (photoId: number, photoDetails: ProfilePhoto) => {
+export const updatePhoto = (photoId: string, photoDetails: ProfilePhotoBase) => {
   return apiClient.put(`/photos/${photoId}`, photoDetails);
 }
 
-export const deletePhoto = (photoId: number) => {
+export const deletePhoto = (photoId: string) => {
   return apiClient.delete(`/photos/${photoId}`);
 }

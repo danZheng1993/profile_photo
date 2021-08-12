@@ -1,9 +1,17 @@
 import React from 'react';
-import {Dimensions, Image, StyleSheet, View} from 'react-native';
+import {
+  Dimensions,
+  Image,
+  Pressable,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import {ProfilePhoto} from '../../models/Profile';
 
 export interface PhotoProps {
   details: ProfilePhoto;
+  onDelete: () => void;
 }
 
 const {width} = Dimensions.get('window');
@@ -24,12 +32,32 @@ const styles = StyleSheet.create({
   image: {
     flex: 1,
   },
+  closeWrapper: {
+    position: 'absolute',
+    width: 48,
+    height: 48,
+    bottom: -24,
+    right: -24,
+    paddingRight: 24,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transform: [{rotate: '45deg'}],
+  },
+  close: {
+    color: '#f00',
+    fontSize: 14,
+    transform: [{rotate: '-45deg'}],
+  },
 });
 
-const Photo: React.FC<PhotoProps> = ({details}) => {
+const Photo: React.FC<PhotoProps> = ({details, onDelete}) => {
   return (
     <View style={styles.wrapper}>
       <Image source={{uri: details.url}} style={styles.image} />
+      <Pressable style={styles.closeWrapper} onPress={onDelete}>
+        <Text style={styles.close}>X</Text>
+      </Pressable>
     </View>
   );
 };

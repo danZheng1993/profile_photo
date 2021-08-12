@@ -15,48 +15,39 @@
   ],
   "photos": [
     {
-      "id": "11111111",
       "memberId": 1,
       "url": "https://collectionimages.npg.org.uk/large/mw82857/Bill-Gates.jpg",
       "position": 0,
       "width": 796,
       "height": 800,
       "centerX": 366,
-      "centerY": 408
+      "centerY": 408,
+      "id": "11111111"
     },
     {
-      "id": "11111112",
       "memberId": 1,
       "url": "https://i.pinimg.com/564x/87/64/76/876476178e8cd6bcaab1269f7283d97b.jpg",
-      "position": 1,
+      "position": 2,
       "width": 480,
       "height": 768,
       "centerX": 259,
-      "centerY": 361
+      "centerY": 361,
+      "id": "11111112"
     },
     {
-      "id": "11111113",
       "memberId": 1,
       "url": "https://media.king5.com/assets/KING/images/156daac9-f162-4c82-bb78-6edc4225d9ae/156daac9-f162-4c82-bb78-6edc4225d9ae_750x422.jpg",
-      "position": 2,
+      "position": 1,
       "width": 750,
       "height": 422,
       "centerX": 349,
-      "centerY": 203
+      "centerY": 203,
+      "id": "11111113"
     },
     {
-      "id": "11111114",
       "memberId": 2,
-      "position": 0,
-      "url": "https://i.insider.com/4c5333af7f8b9a8e5cc30100",
-      "width": 610,
-      "height": 458,
-      "centerX": 305,
-      "centerY": 114
-    },
-    {
       "url": "https://miro.medium.com/max/2000/1*KvhM-ArA5RkpYLi7L_Qtdw.jpeg",
-      "position": 2,
+      "position": 1,
       "width": 2000,
       "height": 1000,
       "centerX": 1000,
@@ -71,17 +62,17 @@
       "centerX": 320,
       "centerY": 240,
       "memberId": "2",
-      "id": "yEy0lOX"
+      "id": "OzreCT9"
     },
     {
       "url": "https://placeimg.com/640/480/any",
       "width": 640,
       "height": 480,
-      "position": 0,
+      "position": 2,
       "centerX": 320,
       "centerY": 240,
       "memberId": "2",
-      "id": "vmsA9s6"
+      "id": "BRwYsT2"
     }
   ]
 }
