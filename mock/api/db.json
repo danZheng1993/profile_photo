@@ -62,6 +62,26 @@
       "centerX": 1000,
       "centerY": 500,
       "id": "Ixag5l0"
+    },
+    {
+      "url": "https://placeimg.com/640/480/any",
+      "width": 640,
+      "height": 480,
+      "position": 0,
+      "centerX": 320,
+      "centerY": 240,
+      "memberId": "2",
+      "id": "yEy0lOX"
+    },
+    {
+      "url": "https://placeimg.com/640/480/any",
+      "width": 640,
+      "height": 480,
+      "position": 0,
+      "centerX": 320,
+      "centerY": 240,
+      "memberId": "2",
+      "id": "vmsA9s6"
     }
   ]
 }
