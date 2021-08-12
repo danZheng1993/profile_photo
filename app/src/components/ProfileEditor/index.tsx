@@ -10,6 +10,7 @@ import {selectProfile} from '../../redux/selectors/profiles';
 
 export interface ProfileEditorProps {
   profileId: number;
+  onBack: () => void;
 }
 
 const styles = StyleSheet.create({
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const ProfileEditor: React.FC<ProfileEditorProps> = ({profileId}) => {
+const ProfileEditor: React.FC<ProfileEditorProps> = ({profileId, onBack}) => {
   const profile = useSelector(selectProfile(profileId));
   const [photos, setPhotos] = useState<ProfilePhoto[]>([]);
   const fetchProfilePhotos = useCallback(
@@ -94,6 +95,9 @@ const ProfileEditor: React.FC<ProfileEditorProps> = ({profileId}) => {
 
   return (
     <View style={styles.wrapper}>
+      <Text style={styles.addCTA} onPress={onBack}>
+        Back
+      </Text>
       <View style={styles.userDetailsWrapper}>
         <Text style={styles.username}>
           {profile?.firstName} {profile?.lastName}

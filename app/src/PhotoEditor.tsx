@@ -12,13 +12,18 @@ const PhotoEditor: React.FC = () => {
   const [profileId, setCurrentProfile] = useState<number | undefined>(
     undefined,
   );
+
   useEffect(() => {
     dispatch(getProfiles());
   }, []);
+
+  const handleBack = () => {
+    setCurrentProfile(undefined);
+  };
   return (
     <SafeAreaView style={{flex: 1}}>
       {profileId ? (
-        <ProfileEditor profileId={profileId} />
+        <ProfileEditor profileId={profileId} onBack={handleBack} />
       ) : (
         <ProfileSelector onSelect={setCurrentProfile} />
       )}
